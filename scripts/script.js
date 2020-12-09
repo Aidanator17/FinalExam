@@ -7,13 +7,17 @@ let picnum = 1
 
 section2.style.display = 'none'
 
-for (let i = 0; i < 5; i++) {
+function imgloop(){
+    for (let i = 0; i < 5; i++) {
     let img = document.createElement('img')
     img.src = './images/pic'+picnum+'.jpg'
     img.id = 'pic'+picnum
     thumbbar.appendChild(img)
     picnum++
+    }
 }
+
+imgloop()
 
 thumbbar.addEventListener('mouseover', hoverImage)
 submitButton[0].addEventListener('click', BlurBabyBlur)
