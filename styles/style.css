@@ -2,6 +2,41 @@ div img {
     width: 20%;
 }
 body {
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
+    width: 640px;
+    margin: auto;
+    font-weight: 500;
+}
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+#SecTwo {
+    text-align: center;
+}
+input {
+    width: 11em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        width: 80%;
+        margin: auto;
+        font-size: 1.5em;
+    }
+    label {
+        display: block;
+    }
+    input {
+        width: 220px;
+        height: 1.5em;
+        padding-left: 5%;
+    }
+    button {
+        display: block;
+        margin: auto;
+        font-size: .9em;
+    }
 }
